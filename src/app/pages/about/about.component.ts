@@ -10,10 +10,11 @@ draggable?: boolean;
 }
 
 @Component({
-  selector: "app-map",
-  templateUrl: "map.component.html"
+  selector: "app-about",
+  templateUrl: "about.component.html",
+  styleUrls: ['./about.component.css']
 })
-export class MapComponent implements OnInit {
+export class AboutComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {

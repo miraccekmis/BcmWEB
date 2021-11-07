@@ -3,7 +3,9 @@
     <div class="col-md-12">
       <div class="card">
         <div class="card-header">
-          <h5 class="title">Alt Kategoriler</h5>
+          <div class="sec-title">
+            <div class="title">Alt Kategoriler</div>
+          </div>
         </div>
         <div class="card-body">
           <div class="row">
@@ -12,11 +14,12 @@
                 font-icon-list
                 col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6
               "
-              (click)="setCurrentCategory(subCategory)"
+              (click)="setCurrentSubCategory(subCategory)"
               routerLink="/product/{{ subCategory.id }}"
               *ngFor="let subCategory of subCategories"
             >
               <div class="font-icon-detail">
+                <img src="..." class="img-fluid" alt="image">
                 <h4>{{ subCategory.name }}</h4>
                 <h4>{{ subCategory.description }}</h4>
               </div>

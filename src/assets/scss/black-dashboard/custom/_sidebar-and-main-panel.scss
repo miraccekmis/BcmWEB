@@ -38,6 +38,7 @@
         min-height: 100%;
         max-height: calc(100vh - 705px);
         z-index: 4;
+        background-color: #c1b462;
         position: relative;
         overflow: auto;
 
@@ -268,6 +269,7 @@
         position: relative;
         padding: $padding-base-vertical $padding-base-horizontal;
         z-index: 4;
+        background-color: #c1b462;
 
         a.logo-mini,
         a.logo-normal{

@@ -3,7 +3,9 @@
     <div class="col-md-12">
       <div class="card">
         <div class="card-header">
-          <h5 class="title">Markalar</h5>
+          <div class="sec-title">
+            <div class="title">Markalar</div>
+          </div>
         </div>
         <div class="card-body">
           <div class="row">
@@ -17,6 +19,7 @@
               *ngFor="let brand of brands"
             >
               <div class="font-icon-detail">
+                <img src="..." class="img-fluid" alt="image" />
                 <h4>{{ brand.name }}</h4>
                 <h4>{{ brand.description }}</h4>
               </div>
