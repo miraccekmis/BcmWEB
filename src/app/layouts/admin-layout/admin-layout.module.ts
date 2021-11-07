@@ -6,10 +6,10 @@ import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 
 import { AdminLayoutRoutes } from "./admin-layout.routing";
-import { DashboardComponent } from "../../pages/dashboard/dashboard.component";
-import { IconsComponent } from "../../pages/icons/icons.component";
-import { MapComponent } from "../../pages/map/map.component";
-import { NotificationsComponent } from "../../pages/notifications/notifications.component";
+import { HomeComponent } from "../../pages/home/home.component";
+import { ServicesComponent } from "../../pages/services/services.component";
+import { AboutComponent } from "../../pages/about/about.component";
+import { ContactComponent } from "../../pages/contact/contact.component";
 import { UserComponent } from "../../pages/user/user.component";
 import { CategoryComponent } from "../../pages/category/category.component";
 import { BrandComponent } from "../../pages/brand/brand.component";
@@ -30,15 +30,15 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
     NgbModule,
   ],
   declarations: [
-    DashboardComponent,
+    HomeComponent,
     UserComponent,
     TablesComponent,
-    IconsComponent,
+    ServicesComponent,
     TypographyComponent,
-    NotificationsComponent,
+    ContactComponent,
     CategoryComponent,
     BrandComponent,
-    MapComponent,
+    AboutComponent,
     SubCategoryComponent,
     ProductComponent
     // RtlComponent

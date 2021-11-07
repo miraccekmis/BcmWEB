@@ -10,21 +10,29 @@ import { ResponseModel } from '../models/responseModel';
 })
 export class ProductService {
 
-  apiUrl = 'https://localhost:44314/api/';
+  apiUrl = 'https://localhost:44357/api/';
 
   constructor(private httpClient: HttpClient) { }
 
-  getProducts():Observable<ListResponseModel<Product>> {
-    let newPath = this.apiUrl + "products/getall"
+  getProduct():Observable<ListResponseModel<Product>> {
+    let newPath =this.apiUrl+"Product/getall"
     return this.httpClient.get<ListResponseModel<Product>>(newPath);
   }
-
-  getProductsByCategory(categoryId:number):Observable<ListResponseModel<Product>> {
-    let newPath = this.apiUrl + "products/getbycategory?categoryId="+categoryId
+  getProductsBySubCategory(id:number):Observable<ListResponseModel<Product>> {
+    console.log("getProductsBySubCategory service");
+    let newPath = this.apiUrl + "Product/getlistbysubcategory?subCategoryId="+id
     return this.httpClient.get<ListResponseModel<Product>>(newPath);
   }
-
-  add(product:Product):Observable<ResponseModel>{
-    return this.httpClient.post<ResponseModel>(this.apiUrl+"products/add",product)
+  productAdd(product:Product):Observable<ResponseModel> {
+    let newPath = this.apiUrl + "Product/add"
+    return this.httpClient.post<ResponseModel>(newPath,product);
+  }
+  productUpdate(product:Product):Observable<ResponseModel> {
+    let newPath = this.apiUrl + "Product/update"
+    return this.httpClient.post<ResponseModel>(newPath,product);
+  }
+  productDelete(id:number):Observable<ResponseModel> {
+    let newPath = this.apiUrl + "Product/delete?productId="+id
+    return this.httpClient.post<ResponseModel>(newPath,id);
   }
 }

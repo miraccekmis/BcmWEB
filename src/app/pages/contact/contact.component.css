@@ -1,0 +1,74 @@
+section {
+  padding: 80px 0;
+  min-height: 100vh;
+}
+
+.contact-info {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-info-icon {
+  margin-bottom: 15px;
+}
+
+.contact-info-icon i {
+  font-size: 25px;
+  color: #C1B462;
+}
+
+.contact-info-icon i:hover {
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+
+.contact-info-item {
+  background: #1e1e2f;
+  padding: 30px 0px;
+  height: 220px;
+}
+
+.contact-info-text p {
+  margin-bottom: 0px;
+}
+
+.contact-info-text h2 {
+  color: #fff;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-info-text span {
+  color: #999999;
+  font-size: 16px;
+  display: inline-block;
+  width: 100%;
+}
+
+.contact-page-map {
+  border: 15px solid  #1e1e2f;
+  width: 100%;
+  height: 450px;
+  margin: 40px auto;
+}
+
+.sec-title {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.sec-title .title {
+  position: relative;
+  color: #C1B462;
+  font-size: 18px;
+  font-weight: 700;
+  padding-right: 50px;
+  margin-bottom: 15px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=notifications.component.css.map */
